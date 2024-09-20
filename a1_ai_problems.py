@@ -17,3 +17,11 @@ assert fizbuzz(5) == "Buzz", "fizzbuzz 5 test"
 assert fizbuzz(6) == "Fizz", "fizzbuzz 6 test"
 assert fizbuzz(15) == "FizzBuzz", "fizzbuzz 15 test"
 
+## Write a function that takes a positive integer and returns the sum of its digits. For example, the sum of the digits in 123 is 1 + 2 + 3 = 6.
+def sum_of_digits(n):
+    return sum(int(digit) for digit in str(n))
+
+## Write a program that takes a string and counts the number of vowels (a, e, i, o, u) in it. Consider both uppercase and lowercase letters.
+def count_vowels(s):
+    vowels = 'aeiouAEIOU'
+    return sum(1 for char in s if char in vowels)
