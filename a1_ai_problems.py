@@ -25,3 +25,7 @@ def sum_of_digits(n):
 def count_vowels(s):
     vowels = 'aeiouAEIOU'
     return sum(1 for char in s if char in vowels)
+
+## Write a function that checks if a number is even or odd.
+def is_even(n):
+    return n % 2 == 0
